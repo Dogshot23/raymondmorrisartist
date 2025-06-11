@@ -99,6 +99,17 @@ nav ul li a.active { /* Style for the current page link (optional JS needed) */
     font-weight: bold;
 }
 
+/* --- Responsive Images in Main Content --- */
+main img {
+    max-width: 100%;  /* Crucial: Image will not exceed the width of its container */
+    height: auto;     /* Maintains the image's aspect ratio as it scales */
+    display: block;   /* Optional: Removes potential extra space below the image */
+    margin-top: 1.5em; /* Optional: Adds some space above the image */
+    margin-bottom: 1.5em; /* Optional: Adds some space below the image */
+    /* margin-left: auto; */ /* Uncomment these two lines if you */
+    /* margin-right: auto; */ /* want to center the image horizontally */
+}
+
 /* --- Gallery Grid Styles (Keep your existing grid code) --- */
 .gallery-grid {
     display: grid;
